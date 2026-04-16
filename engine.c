@@ -816,7 +816,7 @@ static int run_supervisor(const char *rootfs)
     }
 
     /* 1. Open the kernel monitor device. */
-    ctx.monitor_fd = open("/dev/" DEVICE_NAME, O_RDWR);
+    ctx.monitor_fd = open("/dev/", DEVICE_NAME, O_RDWR);
     if (ctx.monitor_fd < 0)
         perror("run_supervisor: open /dev/container_monitor (continuing without monitor)");
 

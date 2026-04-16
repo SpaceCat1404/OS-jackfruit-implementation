@@ -142,6 +142,14 @@ typedef struct {
  * --------------------------------------------------------------- */
 static supervisor_ctx_t *g_ctx;   /* set in run_supervisor for signal handlers */
 
+/* Monitor function declarations */
+int register_with_monitor(int monitor_fd,
+                          const char *container_id,
+                          pid_t host_pid,
+                          unsigned long soft_limit_bytes,
+                          unsigned long hard_limit_bytes);
+int unregister_from_monitor(int monitor_fd, const char *container_id, pid_t host_pid);
+
 static void usage(const char *prog)
 {
     fprintf(stderr,

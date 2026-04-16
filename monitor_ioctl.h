@@ -22,4 +22,6 @@ struct monitor_request {
 #define MONITOR_REGISTER _IOW(MONITOR_MAGIC, 1, struct monitor_request)
 #define MONITOR_UNREGISTER _IOW(MONITOR_MAGIC, 2, struct monitor_request)
 
+#define DEVICE_NAME "container_monitor"
+
 #endif

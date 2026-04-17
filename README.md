@@ -119,10 +119,9 @@ Linux uses the **Completely Fair Scheduler (CFS)**. By adjusting `nice` values, 
 
 | Container | Nice Value | Task Type | Completion Time |
 | :--- | :--- | :--- | :--- |
-| Alpha | -10 | CPU-Bound | [X] seconds |
-| Beta | +10 | CPU-Bound | [Y] seconds |
+| Alpha | -10 | CPU-Bound | 10 seconds |
+| Beta | +10 | CPU-Bound | 24 seconds |
 
-**Analysis:** [Explain how the scheduler favored Alpha due to the lower nice value].
 
 -----
 

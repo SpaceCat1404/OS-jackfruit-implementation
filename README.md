@@ -137,7 +137,7 @@ Linux uses the **Completely Fair Scheduler (CFS)**. By adjusting `nice` values, 
 *Caption: The CLI displaying stored metadata including PIDs and memory limits.*
 
 ### 3\. Bounded-Buffer Logging
-![Bounded-buffer Logging](./screenshots/logging_flow.jpeg)
+![Bounded-buffer Logging](./screenshots/logs_flow.jpeg)
 *Caption: Evidence of container output being captured and flushed to persistent log files.*
 
 ### 4\. CLI and IPC
@@ -149,7 +149,7 @@ Linux uses the **Completely Fair Scheduler (CFS)**. By adjusting `nice` values, 
 *Caption: Kernel logs showing a warning when the soft-limit threshold is crossed.*
 
 ### 6\. Hard-limit Enforcement
-![Hard-limit Enforcement](./screenshots/hard_limit_kill.jpeg)
+![Hard-limit Enforcement](./screenshots/hard_limit_killed.jpeg)
 *Caption: Container process terminated by the LKM after exceeding hard memory limits.*
 
 ### 7\. Scheduling Experiment

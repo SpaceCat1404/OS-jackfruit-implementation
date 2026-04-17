@@ -119,10 +119,10 @@ Linux uses the **Completely Fair Scheduler (CFS)**. By adjusting `nice` values, 
 
 | Container | Nice Value | Task Type | Completion Time |
 | :--- | :--- | :--- | :--- |
-| Alpha | -10 | CPU-Bound | 10 seconds |
-| Beta | +10 | CPU-Bound | 24 seconds |
+| Alpha | 0 | CPU-Bound | 10 seconds |
+| Beta | +10 | CPU-Bound | 10 seconds |
 
-
+The Both containers completing in duration=10 is expected as the nice value won't change how long the workload takes on a lightly loaded system (there's enough CPU to go around as this is a multicore system). On a heavily loaded or single-core system, lopri would take noticeably longer than hipri.
 -----
 
 ## 6\. Demo Screenshots

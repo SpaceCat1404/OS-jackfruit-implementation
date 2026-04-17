@@ -129,33 +129,34 @@ Linux uses the **Completely Fair Scheduler (CFS)**. By adjusting `nice` values, 
 ## 6\. Demo Screenshots
 
 ### 1\. Multi-container Supervision
-![Multi-container Supervisor](./screenshots/multi_container.jpeg)
+![Multi-container Supervisor](./screenshots/multi-container.jpeg)
 *Caption: The supervisor managing multiple isolated container PIDs simultaneously.*
 
 ### 2\. Metadata Tracking (`ps`)
-![Multi-container Supervisor](./screenshots/engine_ps.jpeg)
+![Metadata Tracking](./screenshots/engine_ps.jpeg)
 *Caption: The CLI displaying stored metadata including PIDs and memory limits.*
 
 ### 3\. Bounded-Buffer Logging
-![Multi-container Supervisor](./screenshots/logs_flow.jpeg)
+![Bounded-buffer Logging](./screenshots/logging_flow.jpeg)
 *Caption: Evidence of container output being captured and flushed to persistent log files.*
 
 ### 4\. CLI and IPC
-
+![CLI and IPC](./screenshots/cli_control.jpeg)
 *Caption: CLI sending a 'start' command and receiving a confirmation from the daemon.*
 
 ### 5\. Soft-limit Warning
-
+![Soft-limit Warning](./screenshots/soft_limit_dmesg.jpeg)
 *Caption: Kernel logs showing a warning when the soft-limit threshold is crossed.*
 
 ### 6\. Hard-limit Enforcement
-
+![Hard-limit Enforcement](./screenshots/hard_limit_kill.jpeg)
 *Caption: Container process terminated by the LKM after exceeding hard memory limits.*
 
 ### 7\. Scheduling Experiment
-
+![Scheduling Experiment](./screenshots/sched_results.jpeg)
 *Caption: Comparative performance of containers under different nice configurations.*
 
 ### 8\. Clean Teardown
-
+![Clean Teardown-1](./screenshots/cleanup_verify_1.jpeg)
+![Clean Teardown-2](./screenshots/cleanup_verify_2.jpeg)
 *Caption: Demonstration of 0 zombie processes and successful module unloading.*
